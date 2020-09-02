@@ -4,7 +4,6 @@
   <v-app>
     <v-navigation-drawer app
     temporary 
-    color="grey lighten-4"
     v-model="drawer" 
     >
       <v-list
@@ -13,7 +12,7 @@
       >
         <v-list-item-group
           v-model="group"
-          active-class="deep-purple--text text--accent-4"
+          active-class="primary--text text--accent"
         >
           <v-list-item>
             <v-list-item-icon>
@@ -24,9 +23,16 @@
 
           <v-list-item>
             <v-list-item-icon>
-              <v-icon>mdi-account</v-icon>
+              <v-icon>mdi-life</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Account</v-list-item-title>
+            <v-list-item-title>Life</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-about</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>About</v-list-item-title>
           </v-list-item>
 
         </v-list-item-group>

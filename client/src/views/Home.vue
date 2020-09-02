@@ -1,7 +1,14 @@
 <template>
   <div class="home">
     <v-container>
-      <p>this is a home page</p>
+      <div class="row">
+        <div class="col-md-6">
+          So what do you think about life
+        </div>
+        <div class="col-md-6">
+          Welcome Login now
+        </div>
+      </div>
     </v-container>
   </div>
 </template>
