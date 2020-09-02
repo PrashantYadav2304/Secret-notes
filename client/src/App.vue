@@ -2,9 +2,10 @@
   <!-- App.vue -->
 
   <v-app>
-    <v-navigation-drawer app
-    temporary 
-    v-model="drawer" 
+    <v-navigation-drawer 
+      app
+      temporary 
+      v-model="drawer" 
     >
       <v-list
         nav
@@ -59,8 +60,6 @@
         <v-tab>About</v-tab>
       </v-tabs>
     </div>
-    
-      <v-btn class="secondary">Log in</v-btn>
       <!-- -->
     </v-app-bar>
 
@@ -74,7 +73,8 @@
       </v-container>
     </v-main>
 
-    <v-footer app 
+    <v-footer app
+    absolute 
     color="accent"
     height="80px">
       <!-- -->
