@@ -1,35 +1,97 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <!-- App.vue -->
+
+  <v-app>
+    <v-navigation-drawer app
+    temporary 
+    color="grey lighten-4"
+    v-model="drawer" 
+    >
+      <v-list
+        nav
+        dense
+      >
+        <v-list-item-group
+          v-model="group"
+          active-class="deep-purple--text text--accent-4"
+        >
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Home</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-account</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Account</v-list-item-title>
+          </v-list-item>
+
+        </v-list-item-group>
+      </v-list>
+      <!-- -->
+    </v-navigation-drawer>
+
+    <v-app-bar app
+    color="primary"
+    >
+    <v-app-bar-nav-icon 
+    @click="drawer = true"
+    class="hidden-md-and-up"
+    >
+    </v-app-bar-nav-icon>
+    <div>
+      <v-toolbar-title class="white--text">SECRET NOTES</v-toolbar-title>
     </div>
-    <router-view/>
-    <v-footer>
-      <p>Prashant &amp; Ankur</p>
+    <v-spacer></v-spacer>
+    <div class="mr-8">
+      <v-tabs class="mx-auto hidden-sm-and-down">
+        <v-tab>Home</v-tab>
+        <v-tab>Life</v-tab>
+        <v-tab>About</v-tab>
+      </v-tabs>
+    </div>
+    
+      <v-btn class="secondary">Log in</v-btn>
+      <!-- -->
+    </v-app-bar>
+
+    <!-- Sizes your content based upon application components -->
+    <v-main>
+
+      <!-- Provides the application the proper gutter -->
+      <v-container fluid>
+        <!-- If using vue-router -->
+        <router-view></router-view>
+      </v-container>
+    </v-main>
+
+    <v-footer app 
+    color="accent"
+    height="80px">
+      <!-- -->
+      <p>This is a footer section</p>
     </v-footer>
-  </div>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
 
-#nav {
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+export default {
+  name: 'App',
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+
+  data: () => ({
+    //
+    drawer: false
+  }),
+};
+</script>
+
+<style>
+  
+
 </style>
