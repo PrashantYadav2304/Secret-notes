@@ -57,7 +57,7 @@
       <v-tabs class="mx-auto hidden-sm-and-down">
         <v-tab>Home</v-tab>
         <v-tab>Life</v-tab>
-        <v-tab>About</v-tab>
+        <v-tab :to="{ name: 'About' }">About</v-tab>
       </v-tabs>
     </div>
       <!-- -->

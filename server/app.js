@@ -13,7 +13,6 @@ app.get("/", (req, res) =>{
     res.send("this is another get request");
 })
 
-
 app.listen(port, () => {
     console.log("server is up and running on port : ", port);
 })
