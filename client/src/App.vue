@@ -12,10 +12,9 @@
         dense
       >
         <v-list-item-group
-          v-model="group"
           active-class="primary--text text--accent"
         >
-          <v-list-item>
+          <v-list-item @click="this.$router.push({ name: 'Home' })">
             <v-list-item-icon>
               <v-icon>mdi-home</v-icon>
             </v-list-item-icon>
@@ -29,7 +28,7 @@
             <v-list-item-title>Life</v-list-item-title>
           </v-list-item>
 
-          <v-list-item>
+          <v-list-item @click="this.$router.push({ name: 'About' })">
             <v-list-item-icon>
               <v-icon>mdi-about</v-icon>
             </v-list-item-icon>
@@ -46,7 +45,7 @@
     >
     <v-app-bar-nav-icon 
     @click="drawer = true"
-    class="hidden-md-and-up"
+    class="hidden-md-and-up secondary--text"
     >
     </v-app-bar-nav-icon>
     <div>
@@ -55,7 +54,7 @@
     <v-spacer></v-spacer>
     <div class="mr-8">
       <v-tabs class="mx-auto hidden-sm-and-down">
-        <v-tab>Home</v-tab>
+        <v-tab :to="{ name: 'Home' }">Home</v-tab>
         <v-tab>Life</v-tab>
         <v-tab :to="{ name: 'About' }">About</v-tab>
       </v-tabs>
@@ -64,13 +63,11 @@
     </v-app-bar>
 
     <!-- Sizes your content based upon application components -->
-    <v-main>
-
-      <!-- Provides the application the proper gutter -->
-      <v-container fluid>
-        <!-- If using vue-router -->
-        <router-view></router-view>
-      </v-container>
+    <v-main>     
+     
+      <!-- If using vue-router -->
+      <router-view></router-view>
+ 
     </v-main>
 
     <v-footer app
@@ -92,7 +89,7 @@ export default {
 
   data: () => ({
     //
-    drawer: false
+    drawer: false,
   }),
 };
 </script>

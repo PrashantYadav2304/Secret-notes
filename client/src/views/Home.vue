@@ -20,7 +20,7 @@
     </v-container>
 		<v-container>
 			<div class="row">
-				<div class="mt-2 ">
+				<div class="mt-4 ">
 					<div class="display-2 text-center">Why it is important!</div>
 					<div class="display-1 mb-4 mt-8">
 						<v-icon color="secondary" size="48px">mdi-emoticon-excited-outline</v-icon>
