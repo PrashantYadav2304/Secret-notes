@@ -13,7 +13,7 @@
             </v-container>
               <div class="block">
                 <v-container>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa omnis minus saepe vero quibusdam accusamus tempora. Temporibus ex, obcaecati delectus dolor quod assumenda eum dicta consequuntur possimus nesciunt ipsa odio?
+                  <p>What you do, contributes a lot to people's life. So do something better and cheers :)
                   </p>
                 </v-container>
               </div>
@@ -67,7 +67,7 @@
               </v-btn>  
             </div>  
           </template>
-          <p class="white--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia rerum iste nemo laborum quis! Temporibus expedita, eligendi consequuntur est iusto, saepe minus, repudiandae molestiae fugit ipsam facere non totam sint.</p>
+          <p class="white--text">We are friends and developers. We teamed up on this little web project to learn frontend and backend from each other as Prashant is good at Vuejs and Ankur is good at Nodejs</p>
         </v-dialog>
             </v-card>
           </v-col>
@@ -87,13 +87,13 @@ export default {
           id: 1,
           src: require("../assets/images/prashant.jpg"),
           name: 'Prashant Yadav',
-          title: 'Co-founder'
+          title: 'Tech Lover'
         },
         {
           id: 2,
           src: require("../assets/images/ankur.jpg"),
           name: 'Ankur',
-          title: 'Co-founder'       
+          title: 'Explorer'       
         }
       ]
     };
